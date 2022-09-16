@@ -110,6 +110,9 @@ class sorting{
                 }
             }
         }
+        if($this->checkorder() == false) {
+            $this->compute();
+        }
         $exit = implode(" ", $this->la);
         exit($exit);
         // if($this->la[0] >= $this->lb[0]){
