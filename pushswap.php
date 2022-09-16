@@ -22,11 +22,6 @@ class sorting{
         $this->compute();
     }
 
-    public function test()
-    {
-
-    }
-
     public function compute()
     {
         // echo "computed\n"; //comm
@@ -99,6 +94,7 @@ class sorting{
     {
         // echo "\n\nwe need the great reverse!\n\n"; //comm
         // echo $this->la[0] . "\n" . $this->lb[0]; //comm
+        // echo "\nreverse\n";
         foreach(array_keys($this->lb) as $item){ //verifier que les chiffre sont dans le bonne
             // echo "\nITEM: " . $item . " !!!!!!!!!!!!\n"; // ordre qd il sont push sur la
             $this->pa();
@@ -114,7 +110,7 @@ class sorting{
             $this->compute();
         }
         $exit = implode(" ", $this->la);
-        exit($exit);
+        exit();
         // if($this->la[0] >= $this->lb[0]){
         //     $this->pa();
         // }
